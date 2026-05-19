@@ -3875,20 +3875,6 @@ function initSectionDrag() {
   });
 }
 
-// ===== PRICE TABLE =====
-let priceRowCount = 50;
-function addPriceRow() {
-  const idx = priceRowCount++;
-  const row = document.createElement('tr');
-  row.dataset.pidx = idx;
-  row.innerHTML =
-    '<td class="editable" data-key="pn'+idx+'" contenteditable="true">Маҳсулот номи</td>' +
-    '<td class="editable" data-key="pv'+idx+'" contenteditable="true">4L</td>' +
-    '<td><span class="price-tag editable" data-key="pt'+idx+'" contenteditable="true">Tur</span></td>' +
-    '<td class="price-badge editable" data-key="pp'+idx+'" contenteditable="true">— som</td>';
-  const addRow = document.querySelector('.price-add-row');
-  if (addRow) addRow.parentNode.insertBefore(row, addRow);
-}
 
 // ===== NOTIFICATION =====
 function showNotif(msg) {
